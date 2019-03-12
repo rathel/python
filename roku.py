@@ -3,6 +3,6 @@
 from roku import Roku
 import ssdp
 
-a = Roku.diacovery(timeout=10)
+a = Roku.discover(timeout=10)
 
 print(a)
