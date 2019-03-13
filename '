@@ -13,30 +13,20 @@ print('...')
 
 while True:
     actions = input()
-    # up
-    if(actions == "u"):
+    if(actions == "up"):
         roku.up()
-    # down
-    elif(actions == "d"):
+    elif(actions == "down"):
         roku.down()
-    # home
-    elif(actions == "h"):
+    elif(actions == "home"):
         roku.home()
-    # left
-    elif(actions == "l"):
+    elif(actions == "left"):
         roku.left()
-    # right
-    elif(actions == "r"):
+    elif(actions == "right"):
         roku.right()
-    # select
-    elif(actions == "s"):
+    elif(actions == "select"):
         roku.select()
-    # back
-    elif(actions == "b"):
+    elif(actions == "back"):
         roku.back()
-    # play/pause
-    elif(actions == "p"):
-        roku.play()
     elif(actions == "netflix"):
         netflix.launch()
     elif(actions == "plex"):
