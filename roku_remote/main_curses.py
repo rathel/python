@@ -14,7 +14,6 @@ roku = Roku('192.168.11.103')
 netflix = roku['Netflix']
 plex = roku['Plex']
 primevideo = roku['Prime Video']
-userinput = screen.getstr()
 
 try:
     while True:
@@ -35,9 +34,10 @@ try:
             roku.select()
         elif char == ord('p'):
             roku.play()
-        elif char == ord('i'):
-            curses.echo()
-            userinput
+        elif char == ord('h'):
+            roku.home()
+        elif char == ord('b'):
+            roku.back()
 finally:
     curses.nocbreak(); screen.keypad(0); curses.echo()
     curses.endwin()
