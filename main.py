@@ -2,7 +2,28 @@
 
 from roku import Roku
 import ssdp
+import os
 
-a = Roku.discover(timeout=10)
+roku = Roku('192.168.11.103')
+netflix = roku['Netflix']
 
-print(a)
+print('...')
+
+actions = input()
+
+if(actions == "up"):
+    roku.up()
+elif(actions == "down"):
+    roku.down()
+elif(actions == "home"):
+    roku.home()
+elif(actions == "left"):
+    roku.left()
+elif(actions == "right"):
+    roku.right()
+elif(actions == "select"):
+    roku.select()
+elif(actions == "netflix"):
+    netflix.launch()
+else:
+    print("What do?")
